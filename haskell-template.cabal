@@ -73,7 +73,7 @@ common shared
     TypeOperators
     ViewPatterns
     NoMonomorphismRestriction
-
+    
   build-depends:
     , aeson
     , async
@@ -96,4 +96,4 @@ common shared
 
 executable haskell-template
   import:  shared
-  main-is: DiagramsTutorial.lhs
+  main-is: DiagramsTutorial.hs
