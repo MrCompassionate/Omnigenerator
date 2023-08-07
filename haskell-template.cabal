@@ -27,6 +27,9 @@ common shared
     -Wmissing-deriving-strategies -Wunused-foralls -Wunused-foralls
     -fprint-explicit-foralls -fprint-explicit-kinds
 
+  other-modules:
+    Backend
+
   mixins:
     base hiding (Prelude),
     relude (Relude as Prelude, Relude.Container.One),
