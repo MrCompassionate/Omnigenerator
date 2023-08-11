@@ -1,7 +1,12 @@
+module DiagramsTutorial where
+
 import Diagrams.Prelude
 import Diagrams.Backend.SVG.CmdLine
 
 type DiagramWithState = State Int (Diagram B)
+
+-- X and Y inputs
+
 
 -- Nodes
 
@@ -47,4 +52,7 @@ vertical y x
 
 -- main entry point: it draws a vertical column of 8 horizontal lines, each containing 6 hexagons, and starts numbering from 0.
 
-main = mainWith (evalState (vertical 8 6) 1)
+generateMap :: Int -> Int -> IO()
+generateMap x y = mainWith (evalState (vertical x y) 1)
+
+-- main = mainWith (evalState (vertical 8 6) 1)
